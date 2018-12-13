@@ -210,6 +210,6 @@ public class Livro {
 
     // Cria o método toString
     public String toString(){
-        return "Livro[id=" + id + " titulo=" + titulo + " autor=" + autor + " dataEmprestimo=" + conversor.format(dataEmprestimo) + " dataDevolucao=" + conversor.format(dataDevolucao) + " statusLivro=" + statusLivro + "]";
+        return "Livro[id=" + id + " titulo=" + titulo + " autor=" + autor + " dataEmprestimo=" + conversor.format(dataEmprestimo) + " dataDevolucao=" + conversor.format(dataDevolucao) + " statusLivro=" + statusLivro + " quantidadeEmprestimos=" + quantidadeEmprestimos + "]";
     }
 }
