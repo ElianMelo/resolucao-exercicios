@@ -45,9 +45,8 @@ public class Empregado {
         return (salario * 12);
     }
 
-    public int getAumentoSalario(int porcentagem){
-        int novoSalario = salario + salario * porcentagem / 100;
-        return novoSalario;
+    public void setAumentoSalario(int porcentagem){
+        this.salario = salario + salario * porcentagem / 100;
     }
 
     public String toString(){

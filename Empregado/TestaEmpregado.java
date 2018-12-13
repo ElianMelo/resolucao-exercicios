@@ -17,7 +17,9 @@ public class TestaEmpregado {
         System.out.println("nome completo do empregado2: " + empregado2.getNomeCompleto());
         System.out.println("salario do empregado1: " + empregado1.getSalario());
         System.out.println("salario anual do empregado1: " + empregado1.getSalarioAnual());
-        System.out.println("salario do empregado1 aumentado em 10%: " + empregado1.getAumentoSalario(10));
+
+        empregado1.setAumentoSalario(10);
+        System.out.println("salario do empregado1 aumentado em 10%: " + empregado1.getSalario());
 
         empregado1.setSalario(1000);
         System.out.println("salario do empregado1 atualizado: " + empregado1.getSalario());
