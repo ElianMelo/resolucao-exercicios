@@ -4,7 +4,7 @@ Data de criação do arquivo: 07/12/2018
 Objetivo sucinto do programa: Cria a classe TestaEmpregado que manipula objetos Empregado utilizando seus métodos
 Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1Uq6IUqO100w2ylIxVi17RTwYLo-ljPu2YGu7KPPDydg/edit
 */
-public class TestaEmpregado {
+public class EmpregadoTeste {
 
     public static void main(String[] args){
         Empregado empregado1 = new Empregado(1, "Elian", "Melo", 450);

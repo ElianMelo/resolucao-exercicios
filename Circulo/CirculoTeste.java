@@ -4,7 +4,7 @@ Data de criação do arquivo: 06/12/2018
 Objetivo sucinto do programa: Cria e Manipula um círculo com seus respectivos métodos: setRaio, setCor, getCor, getRaio, getArea e toString
 Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1Uq6IUqO100w2ylIxVi17RTwYLo-ljPu2YGu7KPPDydg/edit
 */
-public class TestaCirculo {
+public class CirculoTeste {
 
     public static void main(String[] args){
         Circulo circulo1 = new Circulo();

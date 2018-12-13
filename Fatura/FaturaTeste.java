@@ -4,7 +4,7 @@ Data de criação do arquivo: 07/12/2018
 Objetivo sucinto do programa: Cria a classe TestaFatura que manipula objetos Fatura utilizando seus métodos
 Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1Uq6IUqO100w2ylIxVi17RTwYLo-ljPu2YGu7KPPDydg/edit
 */
-public class TestaFatura {
+public class FaturaTeste {
 
     public static void main(String[] args){
         Fatura fatura1 = new Fatura();

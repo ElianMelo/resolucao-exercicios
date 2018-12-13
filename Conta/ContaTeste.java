@@ -6,7 +6,7 @@ Referência ao enunciado/origem do exercício: Paul Deitel, Harvey Deitel-Java -
 */
 import java.util.Scanner;
 
-public class TestaConta {
+public class ContaTeste {
     public static void main(String[] args){
         // Cria um objeto Scanner para obter entrada a partir da janela de comando
         Scanner leitor = new Scanner(System.in);

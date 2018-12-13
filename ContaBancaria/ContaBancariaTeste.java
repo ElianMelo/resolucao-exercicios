@@ -4,7 +4,7 @@ Data de criação do arquivo: 07/12/2018
 Objetivo sucinto do programa: Cria a classe TestaContaBancaria que manipula contas bancarias entre si por transferencia além dos métodos credito e débito
 Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1Uq6IUqO100w2ylIxVi17RTwYLo-ljPu2YGu7KPPDydg/edit
 */
-public class TestaContaBancaria {
+public class ContaBancariaTeste {
 
     public static void main(String[] args){
         ContaBancaria conta1 = new ContaBancaria(1, "Elian", 500);

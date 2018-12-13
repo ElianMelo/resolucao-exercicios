@@ -7,7 +7,7 @@ Referência ao enunciado/origem do exercício: https://docs.google.com/document/
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TestaLivro {
+public class LivroTeste {
 
     public static void main(String[] args) {
 
