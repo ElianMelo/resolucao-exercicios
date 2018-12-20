@@ -132,23 +132,27 @@ public class Livro {
             for(int i = 0; i < arr.length; i++){
                 if(arr[i].getTitulo() == titulo && arr[i].getAutor() == autor){
                     if(arr[i].getStatusLivro() == "disponivel"){
-                        return "Livro encontrado com sucesso!\n"
+                        return "-----------------------------------------------------------------------------------\n"
+                         + "Livro encontrado com sucesso!\n"
                          + "id: " + arr[i].getId() + "\n"
                          + "titulo: " + arr[i].getTitulo() + "\n"
                          + "autor: " + arr[i].getAutor() + "\n"
                          + "dataEmprestimo: " + arr[i].getDataEmprestimo() + "\n"
                          + "dataDevolucao: " + arr[i].getDataDevolucao() + "\n"
                          + "statusLivro: " + arr[i].getStatusLivro() + "\n"
-                         + "quantidadeEmprestimos: " + arr[i].getQuantidadeEmprestimos();
+                         + "quantidadeEmprestimos: " + arr[i].getQuantidadeEmprestimos() + "\n"
+                         + "-----------------------------------------------------------------------------------";
                     }else{
-                        return "Livro encontrado com sucesso!\n"
+                        return "-----------------------------------------------------------------------------------\n"
+                         + "Livro encontrado com sucesso!\n"
                          + "id: " + arr[i].getId() + "\n"
                          + "titulo: " + arr[i].getTitulo() + "\n"
                          + "autor: " + arr[i].getAutor() + "\n"
                          + "dataEmprestimo: 10/12/2018\n"
                          + "dataDevolucao: 17/12/2018\n"
                          + "statusLivro: " + arr[i].getStatusLivro() + "\n"
-                         + "quantidadeEmprestimos: " + arr[i].getQuantidadeEmprestimos();
+                         + "quantidadeEmprestimos: " + arr[i].getQuantidadeEmprestimos() + "\n"
+                         + "-----------------------------------------------------------------------------------";
                     }
                 }
             }
@@ -158,7 +162,7 @@ public class Livro {
 
     // Realiza uma exibicao dos livros emprestados de um array
     public static String exibirLivrosEmprestados(Livro[] arr){
-        String livros = "";
+        String livros = "_________________________________________\nLivros emprestados\n";
         if(arr.length == 0){
             return "Insira um array válido";
         }else{
@@ -167,13 +171,13 @@ public class Livro {
                     livros += "Título do livro= " + arr[i].getTitulo() + ", Autor= " + arr[i].getAutor() + "\n";
                 }
             }
-            return livros;
+            return livros + "_________________________________________";
         }
     }
 
     // Realiza a exibicao dos livos disponiveis de um array
     public static String exibirLivrosDisponiveis(Livro[] arr){
-        String livros = "";
+        String livros = "_________________________________________\nLivros disponiveis\n";
         if(arr.length == 0){
             return "Insira um array válido";
         }else{
@@ -182,13 +186,13 @@ public class Livro {
                     livros += "Título do livro= " + arr[i].getTitulo() + ", Autor= " + arr[i].getAutor() + "\n";
                 }
             }
-            return livros;
+            return livros + "_________________________________________";
         }
     }
 
     // Realiza uma exibicao dos livros atrasados de um array
     public static String exibirLivrosAtrasados(Livro[] arr){
-        String livros = "";
+        String livros = "_________________________________________\nLivros atrasados\n";
         if(arr.length == 0){
             return "Insira um array válido";
         }else{
@@ -199,7 +203,7 @@ public class Livro {
                     livros += "Título do livro= " + arr[i].getTitulo() + ", Autor= " + arr[i].getAutor() + ", Dias de atrasado: " +  dias + "\n";
                 }
             }
-            return livros;
+            return livros + "_________________________________________";
         }
     }
 
@@ -248,14 +252,16 @@ public class Livro {
                     quantidadeEmprestimos = arr[i].getQuantidadeEmprestimos();
                 }
             }
-            return "Livro mais emprestado\n"
+            return "-----------------------------------------------------------------------------------\n"
+                + "Livro mais emprestado\n"
                 + "id: " + id + "\n"
                 + "titulo: " + titulo + "\n"
                 + "autor: " + autor + "\n"
                 + "dataEmprestimo: " + dataEmprestimo + "\n"
                 + "dataDevolucao: " + dataDevolucao + "\n"
                 + "statusLivro: " + statusLivro + "\n"
-                + "quantidadeEmprestimos: " + quantidadeEmprestimos;
+                + "quantidadeEmprestimos: " + quantidadeEmprestimos + "\n"
+                + "-----------------------------------------------------------------------------------";
         }
     }
 

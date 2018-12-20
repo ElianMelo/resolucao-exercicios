@@ -99,9 +99,9 @@ public class LivroTeste {
         System.out.println("Busca o livro animais fantasticos 2 da J. K. Rowling\n" + Livro.buscarLivro(harryPotter, "animais fantasticos 2", "J. K. Rowling"));
         System.out.println();
 
-        System.out.println("Livros Emprestados\n" + Livro.exibirLivrosEmprestados(harryPotter));
-        System.out.println("Livros Disponiveis\n" + Livro.exibirLivrosDisponiveis(harryPotter));
-        System.out.println("Livros Atrasados\n" + Livro.exibirLivrosAtrasados(harryPotter));
+        System.out.println(Livro.exibirLivrosEmprestados(harryPotter));
+        System.out.println(Livro.exibirLivrosDisponiveis(harryPotter));
+        System.out.println(Livro.exibirLivrosAtrasados(harryPotter));
         System.out.println(Livro.exibeLivroMaisEmprestado(harryPotter));
         System.out.println();
 
@@ -112,13 +112,13 @@ public class LivroTeste {
         // Testa os metodos de array com um array inválido
         System.out.println("Busca livro em um array inválido\n" + Livro.buscarLivro(livros, "livro", "livro"));
         System.out.println();
-        System.out.println("Livros Emprestados\n" + Livro.exibirLivrosEmprestados(livros));
+        System.out.println("Tenta Exibir Livros Emprestados\n" + Livro.exibirLivrosEmprestados(livros));
         System.out.println();
-        System.out.println("Livros Disponiveis\n" + Livro.exibirLivrosDisponiveis(livros));
+        System.out.println("Tenta Exibir Livros Disponiveis\n" + Livro.exibirLivrosDisponiveis(livros));
         System.out.println();
-        System.out.println("Livros Atrasados\n" + Livro.exibirLivrosAtrasados(livros));
+        System.out.println("Tenta Exibir Livros Atrasados\n" + Livro.exibirLivrosAtrasados(livros));
         System.out.println();
-        System.out.println("Livro Mais emprestado\n" + Livro.exibeLivroMaisEmprestado(livros));
+        System.out.println("Tenta Exibir Livro Mais emprestado\n" + Livro.exibeLivroMaisEmprestado(livros));
         System.out.println();
 
         System.out.println(vivian.toString());
