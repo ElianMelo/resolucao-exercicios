@@ -30,6 +30,8 @@ public class LivroTeste {
         harryPotter[6] = new Livro(6, "Colecao harry potter", "J. K. Rowling", dataInicio, dataFim, "disponivel", 50);
         harryPotter[7] = new Livro(7, "Animais fantasticos e onde habitam", "J. K. Rowling", dataInicio, dataFim, "emprestado", 5);
 
+        Livro[] livros = new Livro[0];
+
         Livro vivian = new Livro(8, "Vivian contra o apocalipse", "Katie Coyle", dataInicio, dataFimAtrasado2, "emprestado", 5);
         Livro habito = new Livro(9, "O poder do habito", "Charles Duhigg", dataInicio, dataFim, "disponivel", 3);
         Livro corvo = new Livro(9, "O corvo", "Edgar Allan Poe", dataInicio, dataFim, "disponivel", 7);
@@ -97,9 +99,9 @@ public class LivroTeste {
         System.out.println("Busca o livro animais fantasticos 2 da J. K. Rowling\n" + Livro.buscarLivro(harryPotter, "animais fantasticos 2", "J. K. Rowling"));
         System.out.println();
 
-        System.out.println(Livro.exibirLivrosEmprestados(harryPotter));
-        System.out.println(Livro.exibirLivrosDisponiveis(harryPotter));
-        System.out.println(Livro.exibirLivrosAtrasados(harryPotter));
+        System.out.println("Livros Emprestados\n" + Livro.exibirLivrosEmprestados(harryPotter));
+        System.out.println("Livros Disponiveis\n" + Livro.exibirLivrosDisponiveis(harryPotter));
+        System.out.println("Livros Atrasados\n" + Livro.exibirLivrosAtrasados(harryPotter));
         System.out.println(Livro.exibeLivroMaisEmprestado(harryPotter));
         System.out.println();
 
@@ -107,7 +109,17 @@ public class LivroTeste {
         System.out.println("Cobra R$5.00 para cada dia atrasado do livro: " + harryPotter[5].getTitulo() + "\nValor total: R$" + harryPotter[5].gerarMulta(5));
         System.out.println();
 
-        System.out.println(Livro.listarTodosLivros(harryPotter));
+        // Testa os metodos de array com um array inválido
+        System.out.println("Busca livro em um array inválido\n" + Livro.buscarLivro(livros, "livro", "livro"));
+        System.out.println();
+        System.out.println("Livros Emprestados\n" + Livro.exibirLivrosEmprestados(livros));
+        System.out.println();
+        System.out.println("Livros Disponiveis\n" + Livro.exibirLivrosDisponiveis(livros));
+        System.out.println();
+        System.out.println("Livros Atrasados\n" + Livro.exibirLivrosAtrasados(livros));
+        System.out.println();
+        System.out.println("Livro Mais emprestado\n" + Livro.exibeLivroMaisEmprestado(livros));
+        System.out.println();
 
         System.out.println(vivian.toString());
         System.out.println(habito.toString());
