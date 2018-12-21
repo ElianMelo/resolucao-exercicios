@@ -7,9 +7,18 @@ Referência ao enunciado/origem do exercício: https://docs.google.com/document/
 import java.lang.IllegalArgumentException;
 
 class Demonstra_IllegalArgumentException {
-    private final int valor;
+    private int valor;
 
-    public Demonstra_IllegalArgumentException(int valor) {
+    Demonstra_IllegalArgumentException() {}
+
+    Demonstra_IllegalArgumentException(int valor) {
+        if (valor != 1) {
+            throw new IllegalArgumentException(Integer.toString(valor));
+        }
+            this.valor = valor;
+    }
+
+    public void setValor(int valor){
         if (valor != 1) {
             throw new IllegalArgumentException(Integer.toString(valor));
         }
@@ -22,7 +31,7 @@ class Demonstra_IllegalArgumentException {
 
     public static void main(String[] args){
         try {
-            Demonstra_IllegalArgumentException percentage = new Demonstra_IllegalArgumentException(2);
+            Demonstra_IllegalArgumentException valor = new Demonstra_IllegalArgumentException(2);
         } catch(IllegalArgumentException e){
             System.out.println("Argumento inválido");
         }
