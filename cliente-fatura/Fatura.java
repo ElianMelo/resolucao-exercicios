@@ -5,12 +5,12 @@ Objetivo sucinto do programa: Criar uma classe que simula uma fatura
 Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
 */
 public class Fatura {
-	int ID;
-	Cliente cliente;
-	double montante;
+	private int ID;
+	private Cliente cliente;
+	private double montante;
 	
-	public Fatura(int iD, Cliente cliente, double montante) {
-		this.ID = iD;
+	Fatura(int ID, Cliente cliente, double montante) {
+		this.ID = ID;
 		this.cliente = cliente;
 		this.montante = montante;
 	}
