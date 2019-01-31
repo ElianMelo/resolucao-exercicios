@@ -25,8 +25,14 @@ public class AutorLivroTeste {
 		System.out.println("Autor do livro2: " + livro2.getAutor());
 		
 		autor1.setEmail("joao-carr@gmail.com");
-		System.out.println(autor1.getEmail());
-		System.out.println(autor2.getGenero());
+		System.out.println("Email do autor1: " + autor1.getEmail());
+		System.out.println("Genênero do autor2: " + autor2.getGenero());
+		
+		System.out.println("autor1 é igual ao autor2: " + autor1.equals(autor2));
+		
+		Autor autor3 = new Autor("John Carreyrou", "joao-carr@gmail.com", 'm');
+		
+		System.out.println("autor1 é igual ao autor3: " + autor1.equals(autor3));
 	}
 
 }
